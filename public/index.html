@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>T3kr4</title>
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+
+	<body>
+		<header>
+			<button id="logo_b"><img src="assets/logo_b.png"></button>
+			<button id="menu_b" onclick="show()"><img src="assets/menu_b.png"></button>
+			<script>
+				function show(){
+					const menu = document.getElementById('menu')
+					if(menu.style.display==="none"){
+						menu.style.display = "block";
+					}
+					else{
+						menu.style.display = "none";
+					}
+				}
+			</script>
+			<marquee behaivor="alternate" direction="left"><h1>piska</h1></marquee>
+		</header>
+
+		<main>
+			<nav id="menu">
+				<img src="assets/sidebar.png">
+				<ul>
+					<li>Главная</li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Политика</a></li>
+				</ul>
+			</nav>
+
+			<div id="page">
+				<div class="text_a">
+					<img src="assets/text_a.png">
+					<h1>
+						О бренде
+					</h1>
+					<p>
+						T3KR4 (тэкра) - юный бренд бла бла блаб лаб бла
+					</p>
+				</div>
+
+				<button class="button_wide">
+					<img src="assets/button_wide.png">
+					<h1>В магазин</h1>
+				</button>
+			</div>
+		</main>
+
+		<footer>
+		</footer>
+	</body>
+</html>
